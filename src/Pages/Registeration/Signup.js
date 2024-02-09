@@ -33,7 +33,7 @@ export default function SignUp() {
   const createKennel = async (data) => {
  
     const savedUserResponse = await fetch(
-      `${BACKEND_URI}/kennel/signup`,
+      `${BACKEND_URI}/api//kennel/signup`,
       {
         method: "POST",
         headers: {
