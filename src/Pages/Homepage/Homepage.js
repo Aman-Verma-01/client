@@ -18,7 +18,7 @@ const Homepage = () => {
     <>
       <MainFeaturedPet post={mainFeaturedPost} />
       <Grid container spacing={4}>
-        {/* define the spacing between the components childs */}
+        {/* distanza tra i componenti figli */}
         {pets?.map((pet) => (
           <FeaturedPet key={pet._id} pet={pet} />
         ))}

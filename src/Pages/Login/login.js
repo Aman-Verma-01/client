@@ -7,6 +7,8 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import { BACKEND_URI } from "../../utils/constants";
+import { useNavigate } from "react-router-dom";
 
 export default function SignIn() {
 
@@ -15,7 +17,7 @@ export default function SignIn() {
   const login = async (data) => {
  
     const savedUserResponse = await fetch(
-      `${BACKEND_URI}/kennel/login`,
+      `${BACKEND_URI}/api/kennel/login`,
       {
         method: "POST",
         headers: {
